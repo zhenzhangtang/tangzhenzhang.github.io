@@ -1,0 +1,356 @@
+.roboto-light-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  position: relative;
+}
+
+.orange {
+  position: absolute;
+  top: -10vh;
+  right: 0;
+  z-index: -1;
+  width: 50vw;
+  height: 150vh;
+}
+
+header {
+  nav {
+    width: 100%;
+    background: rgba(99, 182, 207, 0.2);
+    filter: blur(1px);
+    position: relative;
+    z-index: 2;
+    font-weight: bold;
+
+    ul {
+      padding: 2rem;
+      width: 70%;
+      margin: 0 auto;
+      display: flex;
+      list-style-type: none;
+      justify-content: space-around;
+      position: relative;
+      z-index: 3;
+      li {
+        font-size: 1.75rem;
+
+        a {
+          color: hsla(167, 58%, 34%, 0.829);
+          text-decoration: none;
+          font-weight: bold;
+          text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.8);
+        }
+      }
+    }
+
+    #particles-js {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: transparent;
+      z-index: 1;
+    }
+  }
+}
+main {
+  display: flex;
+  flex-wrap: wrap;
+
+  section.left {
+    flex: 3 1 500px;
+    padding: 2rem;
+
+    h1 {
+      font-size: 4rem;
+      color: #e08958;
+    }
+    p {
+      font-size: 1.5rem;
+      padding: 1rem 0rem;
+    }
+  }
+  section.right {
+    flex: 1 1 600px;
+    position: relative;
+    img {
+      border-radius: 50%;
+      width: 15vw;
+      height: 15vw;
+      position: absolute;
+      top: 55vh;
+      right: 25vw;
+      transform: translateY(-50%);
+    }
+  }
+
+  section.table {
+    flex: 3 1 500px;
+    padding: 2rem;
+    table {
+      border-collapse: collapse;
+      tr {
+        border-bottom: 2px solid gray;
+        transition: all 0.2s ease;
+        td {
+          padding: 1rem;
+        }
+        &:hover {
+          background-color: #ffd2b8;
+        }
+      }
+    }
+  }
+  section.picture {
+    flex: 1 1 600px;
+    position: relative;
+    img {
+      width: 30vw;
+    }
+    div.orangeRect {
+      width: 30vw;
+      height: 90vh;
+      background-color: #e08958;
+      position: absolute;
+      top: 30px;
+      left: 80px;
+      z-index: -1;
+    }
+  }
+
+  section.form {
+    flex: 1 1 600px;
+    form {
+      min-height: 70vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      padding: 1.5rem;
+      div {
+        margin: 0.5rem;
+        label {
+          font-size: 1.5rem;
+          margin-right: 1rem;
+        }
+        input,
+        textarea {
+          background-color: #ffaa79;
+          color: white;
+          font-size: 1.25rem;
+          padding: 0.5rem 0.25rem;
+          border: none;
+          width: 90%;
+        }
+        textarea {
+          vertical-align: top;
+        }
+      }
+      button {
+        align-self: center;
+        background-color: #e08958;
+        color: white;
+        border: none;
+        cursor: pointer;
+        padding: 0.75em 1.5rem;
+        font-size: 2rem;
+        border-radius: 10px;
+      }
+    }
+  }
+
+  div.line {
+    background-color: gray;
+    width: 3px;
+  }
+
+  section.contact {
+    flex: 1 1 500px;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+
+    div.content {
+      h2 {
+        font-family: "Dosis", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        margin: 1rem 0rem;
+      }
+    }
+  }
+}
+
+.photo_gallery {
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+// <uniquifier>: Use a unique and descriptive class name
+
+h1 {
+  margin: 60px;
+  font-family: "Dosis", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide photo sildes by default */
+.photosildes {
+  display: none;
+}
+
+/* put a select cursor when mouse hovering */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next Photos & Previous Photo */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 30%;
+  color: #e08958;
+  font-weight: bold;
+  font-size: 30px;
+}
+.prev {
+  left: 30px;
+  border-radius: 2px 0 0 2px;
+}
+/* Position the "next button" to the right */
+.next {
+  right: 30px;
+  border-radius: 2px 0 0 2px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(40, 188, 247, 0.8);
+}
+
+/* Photo pages  */
+.photopage {
+  color: #9b8989;
+  font-size: 18px;
+  padding: 9px 13px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #e08958;
+  padding: 15px 20px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* five columns side by side */
+.column {
+  float: left;
+  width: 19%;
+  margin: 2px;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+#videos {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+#videos .video_controls {
+  font-size: 100px;
+  background-color: #e08958;
+}
+
+footer {
+  a {
+    padding: 1rem;
+  }
+}
+
+.active {
+  color: #e08958;
+}
+
+@media screen and (max-width: 1100px) {
+  .orange {
+    opacity: 0.5;
+  }
+  header {
+    nav {
+      ul {
+        width: 100%;
+        flex-direction: column;
+        li {
+          padding: 1rem 0rem;
+          border-bottom: 2px solid gray;
+        }
+      }
+    }
+  }
+  main {
+    section.right {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 1rem;
+      img {
+        position: static;
+        transform: none;
+        width: 50vw;
+        height: 50vw;
+      }
+    }
+    section.picture {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 60vw;
+      }
+      div.orangeRect {
+        display: none;
+      }
+    }
+  }
+}

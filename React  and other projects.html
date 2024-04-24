@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="ZHENZHANG TANG" />
+    <meta name="robots" content="index, follow" />
+    <meta
+      name="description"
+      content="Full stack web designer Zhenzhang Tang(Don)."
+    />
+    <title>Hire Me | Don ZHENZHANG TANG Front-End web developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/animation.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="./particles-setup.js"></script>
+  </head>
+  <!--header and navbar-->
+  <body>
+    <header>
+      <nav>
+        <div id="particles-js"></div>
+        <ul>
+          <li><a href="index.html">Index</a></li>
+          <li><a herf="resume.html">Resume</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li>
+            <a class="active" href="#">React and other projects</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="photo_gallery">
+        <h1>Photo Gallery</h1>
+        <div class="container">
+          <div class="photosildes">
+            <div class="photopage">1 / 10</div>
+            <img src="photos/color (1).png" alt="color" />
+          </div>
+
+          <div class="photosildes">
+            <div class="photopage">2 / 10</div>
+            <img src="photos/color (2).png" alt="color_BM" />
+          </div>
+
+          <div class="photosildes">
+            <div class="photopage">3 / 10</div>
+            <img src="photos/color (3).png" alt="color_BM2" />
+          </div>
+
+          <div class="photosildes">
+            <div class="photopage">4 / 10</div>
+            <img src="photos/BLUE.PNG" alt="color_GD" />
+          </div>
+
+          <div class="photosildes">
+            <div class="photopage">5 / 10</div>
+            <img src="photos/color (5).png" alt="color_RD" />
+          </div>
+
+          <div class="photosildes">
+            <div class="photopage">6 / 10</div>
+            <img src="photos/color (6).png" alt="color_RM" />
+          </div>
+
+          <div class="photosildes">
+            <div class="photopage">7 / 10</div>
+            <img src="photos/color (7).png" alt="color_RM2" />
+          </div>
+
+          <div class="photosildes">
+            <div class="photopage">8 / 10</div>
+            <img src="photos/color (8).png" alt="color_RM3" />
+          </div>
+
+          <div class="photosildes">
+            <div class="photopage">9 / 10</div>
+            <img src="photos/color (9).png" alt="color_RM4" />
+          </div>
+
+          <div class="photosildes">
+            <div class="photopage">10 / 10</div>
+            <img src="photos/color.jpg" alt="color_RM5" />
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">Previous Photo</a>
+          <a class="next" onclick="plusSlides(1)">Next Photo</a>
+
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+
+          <div class="row">
+            <div class="column">
+              <img
+                class="demo cursor"
+                src="photos/color (1).png"
+                style="width: 100%"
+                onclick="currentSlide(1)"
+                alt="This is color"
+              />
+            </div>
+            <div class="column">
+              <img
+                class="demo cursor"
+                src="photos/color (2).png"
+                style="width: 100%"
+                onclick="currentSlide(2)"
+                alt="This is color_BM"
+              />
+            </div>
+            <div class="column">
+              <img
+                class="demo cursor"
+                src="photos/color (3).png"
+                style="width: 100%"
+                onclick="currentSlide(3)"
+                alt="This is color_BM2"
+              />
+            </div>
+            <div class="column">
+              <img
+                class="demo cursor"
+                src="photos/BLUE.PNG"
+                style="width: 100%"
+                onclick="currentSlide(4)"
+                alt="This is color_GD"
+              />
+            </div>
+            <div class="column">
+              <img
+                class="demo cursor"
+                src="photos/color (5).png"
+                style="width: 100%"
+                onclick="currentSlide(5)"
+                alt="This is color_RD"
+              />
+            </div>
+            <div class="column">
+              <img
+                class="demo cursor"
+                src="photos/color (6).png"
+                style="width: 100%"
+                onclick="currentSlide(6)"
+                alt="This is color_RM"
+              />
+            </div>
+
+            <div class="column">
+              <img
+                class="demo cursor"
+                src="photos/color (7).png"
+                style="width: 100%"
+                onclick="currentSlide(7)"
+                alt="This is color_RM2"
+              />
+            </div>
+            <div class="column">
+              <img
+                class="demo cursor"
+                src="photos/color (8).png"
+                style="width: 100%"
+                onclick="currentSlide(8)"
+                alt="This is color_RM3 "
+              />
+            </div>
+            <div class="column">
+              <img
+                class="demo cursor"
+                src="photos/color (9).png"
+                style="width: 100%"
+                onclick="currentSlide(9)"
+                alt="This is color_RM4"
+              />
+            </div>
+            <div class="column">
+              <img
+                class="demo cursor"
+                src="photos/color.jpg"
+                style="width: 100%"
+                onclick="currentSlide(10)"
+                alt="This is color_RM5"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--end of gallery class -->
+      <div id="videos">
+        <!--This is my video-->
+        <h1>React projects intro videos</h1>
+        <div class="video_controls">
+          <button onclick="playPause()">Play/Pause</button>
+          <button onclick="showBiger()">Bigger</button>
+          <button onclick="showSmaller()">Smaller</button>
+          <button onclick="backNoraml()">Normal</button>
+          <br /><br />
+          <video id="video" width="500">
+            <source src="/videos/video.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </div>
+      <!--end of video controls-->
+    </main>
+    <!--links for facebook, instagram and github-->
+    <footer>
+      <a href="#"
+        ><img src="./ICONS/facebook.svg" alt="facebook" title="facebook page"
+      /></a>
+      <a href="#">
+        <img
+          src="./ICONS/instagram.svg"
+          alt="instagram"
+          title="instagram page"
+        />
+      </a>
+      <a href="#">
+        <img
+          src="./ICONS/github-brands 1.svg"
+          alt="github"
+          title="github page"
+        />
+      </a>
+    </footer>
+  </body>
+  <script src="./slideshow.js"></script>
+  <script src="./video.js "></script>
+  <script src="particles-setup.js"></script>
+</html>
